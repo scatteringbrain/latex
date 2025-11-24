@@ -1,0 +1,61 @@
+\documentclass{report}
+\usepackage{graphicx}
+\title{chapter1} 
+\begin{document}
+Problem 1. \\ \\ If a charged particle is undeflected in passing through uniform crossed electric and magnetic fields E and B(mutually perpendicular and both perpendicular to the direction of motion), what is its velocity? if we now turn off the electric field, and the particle moves in an arc or radius R, what is its charge-to-mass ratio?
+
+
+solution \\ 
+1. lorentz force \begin{equation} F = q(E + v \times B) \end{equation} 
+2. poynting vector (not used) \begin{equation} S = E \times H \end{equation} 
+
+from the lorentz force, the velocity is derived by \begin{equation} qE = - v \times B \end{equation}   because the force is zero. (The E and B are perpendicular and the particle is undeflected.) 
+
+Turn off E, and then moving in radius R, what is its charge-to-mass ratio?
+
+motion of circle \begin{equation} F = mv^2/R = qvB 
+q/m = (v(vel))^2/(v(vol)BR) \end{equation} \\ \\ \\ \\ \\
+
+ 
+Problem 2. \\ \\
+The mass of Yukawa's meson can be estimated as follows. When two protons in a nucleus exchange a meson (mass m), they must temporarily violate the conservation of energy by an amount \(mc^2\) (the rest energy of the meson). The Heisenberg uncertainty principle says that you may 'borrow' an energy \(\triangle E\), provide you 'pay it back' in a time \(\triangle t\) given by  \(\triangle E \triangle t = \frac{\hbar}{2} \) (where \(\hbar   \equiv \frac{h}{\pi} \)). In this case, we need to borrow \(\triangle E \) = \(mc^2\) long enough for the meson to make it from one proton to the other. It has to cross the nucleus (size \(r_0\)), and it travels, presumably, at some substantial fraction of the speed of light, so, roughly speaking, \(\triangle\)t = \(r_0\)/c. Putting all this together, we have
+\[ m = \frac{\hbar}{2 r_0 c} \]
+Using  \(r_0\) = \(10^{-13}\)cm ( the size of a typical nucleus), calculate the mass of Yukawa's meson. Express your answer in MeV/\(c^{2}\), and compare the observed mass of the pion.
+[Comment: If you find that argument compelling. I can only say that you're pretty gullible. Try it for an atom, and you'll conclude that the mass of the photon is about 7 X \(10^{-30}\)g, which is nonsense. Nevertheless, it is a useful device for 'back-of-the-envelope' calculations, and it does very well for the pi meson. Unfortunately, many books present it as through it were a rigorous derivation, which is certainly is not. The uncertainty principle does not license violation of conservation of energy (nor does any such violation occur in this process; we shall see later on how this comes about). Moreover, it's an inequality, \(\triangle E \triangle t >= \frac{\hbar}{2}]\), which at most could give you a lower bound on m. it is typically true that the range of a force is inversely proportional to the mass of the mediator, but the size of a bound state is not always a good measure of the range. (That's why the argument fails for the photon:the range of the electromagnetic force is infinite, but the size of an atom is not.) In general, when you hear a physicist invoke the uncertainty principle, keep a hand on your wallet.]\\ \\
+
+
+
+\(\hbar\) = 6.58 \(\times\) \(10^{-22}\) MeV\(\cdot\)s \\ \\ 
+\(r_{0}\) = \(10^{-15}\)m \\ \\
+c = 3 \(\times\) \(10^{8}\)m/s \\ \\
+\[m = \frac{6.58 \times 10^{-22} MeV\cdot s}{2\times 10^{-15}m \cdot 3 \times 10^{8} m/s}\] \\ \\
+\[m = \frac{6.58 \times 10^{-22} MeV\cdot s \cdot 3 \times 10^{8}m/s }{2\times 10^{-15}m \cdot 3 \times 10^{8} m/s \cdot 3 \times 10^{8} m/s}\] \\ \\ 
+\[m = 98.7 \ MeV/c^{2}\] \\ \\ \\ \\ \\ 
+
+Problem 3. \\ \\ 
+In the period before the discovery of the neutron, many people thought that the nucleus consisted of protons and electrons, with the atomic number equal to the excess number of protons. Beta decay seemed to support this idea - after all, electrons come popping out; doesn't that imply that there were electron inside? Use the position-momentum uncertainty relation, \(\triangle x\)\(\triangle p\) \(\geq\) \(\hbar\)/2, to estimate the minimum momentum of an electron confined to a nucleus (radius \(10^{-13}\) cm). From the relativistic energy-momentum relation, \(E^{2}\) - \(\bf p^{2}\) \(\geq\) \(m^{2}c^{4}\), determine the corresponding energy and compare it with that of an electron emitted in, say, the beta decay of tritium (Figure 1, textbook-Figure 1.5). 
+\begin{figure}
+  \includegraphics[width=\linewidth]{The-beta-decay-spectrum-of-tritium-3-1-H-3-2-He-e-Source-Lewis-G-M-1970.png}
+  \caption{Beta decay.}
+  \label{fig:betadecay}
+\end{figure}
+(This result convinced some people that the beta decay electron could not have been rattling around inside the nucleus, but must be produced in the disintegration itself.) \\ \\ 
+
+Solution \\ \\
+\(\triangle p\) \(\geq\) \(\frac{\hbar}{2 \triangle x}\), \\ \\
+2\(\triangle x\) = \(10^{-15}\)m, \\ \\
+\[\triangle p = \frac{6.58 \times 10^{-22} MeV\cdot s}{2\times 10^{-15}m} \]
+\(E^{2}\) = \(\bf p^{2}\)\(c^{2}\) + \(m^{2}c^{4}\)\\
+%commentout?
+%E = $\sqrt{3}$ works
+%E = \(\sqrt{10}\) works 
+%E = $\sqrt{\bf p^{2}c^{2}}$ works
+%E = $\sqrt{\(\bf p^{2}\)c^{2}}$ does not work
+\[m_{e}c^{2} = 0.511 MeV\]\\
+\[m_{e}^{2}c^{4} = 0.261 MeV^{2}\]\\
+\[p^{2}c^{2} =(\frac{6.58 \times 10^{-22} MeV\cdot s \cdot 3\times10^{8}m/s}{2\times 10^{-15}m})^{2} = 9740 MeV^{2} \]\\
+\[E = \sqrt{\mathbf{p^{2}}c^{2} + m^{2}c^{4}} = 98.68 MeV\]\\
+This is too large compared to the beta decay energy spectrum.
+
+%E = $\sqrt{\(\bf p^{2}\)\(c^{2}\) + \(m^{2}c^{4}\)}$
+\end{document}
