@@ -1,5 +1,6 @@
 \documentclass{report}
 \usepackage{graphicx}
+\usepackage{tikz-feynman} 
 \title{chapter2} 
 \begin{document}
 
@@ -21,12 +22,49 @@ Problem 2.2 \\ \\
 Sketch the lowest-order Feynman diagram represneting Delbruck scattering: \(\gamma\) + \(\gamma\) \(\rightarrow\) \(\gamma\) + \(\gamma\). (This process, the scattering of light by light, has no analog in classical electrodynamics.)\\
 
 Solution \\ \\ 
+\feynmandiagram[scale=2,transform shape] [layered layout, horizontal=a to b] {
+% Draw the top and bottom lines
+i1 [particle=$\gamma$]
+-- [photon] a
+-- [fermion, edge label=\(e^{-}\)] b
+-- [photon] f1 [particle=$\gamma$],
+i2 [particle=$\gamma$]
+-- [photon] c
+-- [anti fermion, edge label=\(e^{-}\)] d
+-- [photon] f2 [particle=$\gamma$],
+% Draw the two internal fermion lines
+{ [same layer] c -- [fermion, edge label=\(e^{-}\)] a },
+{ [same layer] d -- [anti fermion, edge label=\(e^{-}\)] b},
+};
+%\begin{figure}
+ % \includegraphics[width=\linewidth]{pp2.2.png}
+ % \caption{The lowest photon scattering (not sure)}
+%  \label{fig:Delbruck scattering}
+%\end{figure} 
 
-\begin{figure}
-  \includegraphics[width=\linewidth]{pp2.2.png}
-  \caption{The lowest photon scattering (not sure)}
-  \label{fig:Delbruck scattering}
-\end{figure}
+. \\ \\ \\ \\ \\
+
+Problem 2.3 \\ \\
+Draw all the fourth-order (four vertex) diagrams for Compton scattering. (There are 17 of them; disconnected diagrams don't count.)\\
+
+Solution \\ 
+\feynmandiagram[scale=2,transform shape] [layered layout, horizontal=a to b] {
+% Draw the top and bottom lines
+i1 [particle=\(e^{-}\)]
+-- [fermion] a
+-- [photon] b
+-- [fermion] f1 [particle=\(e^{-}\)],
+i2 [particle=$\gamma$]
+-- [photon] c
+-- [fermion, edge label=\(e^{-}\)] d
+-- [photon] f2 [particle=$\gamma$],
+% Draw the two internal fermion lines
+{ [same layer] c -- [fermion, edge label=\(e^{-}\)] a },
+{ [same layer] d -- [fermion, edge label=\(e^{-}\)] b},
+};
+(to be continue)
+
+
 
 
 
