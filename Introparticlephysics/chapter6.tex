@@ -1,0 +1,27 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\title{chapter6} 
+\begin{document}
+Problem 1. \\ \\ 
+Derive Equation 6.3. [Hint: What fraction of the original sample decays between t and t + dt? What, is the (initial) probability, p(t)dt, of any given particle decaying between t and t + dt? The average lifetime is \(\int_0^\infty t p(t) \,dt \).] \\ \\
+Solution\\ \\
+$\tau$ = $\frac{1}{\Gamma}$ ,  Equation (6.3) \\ \\
+%Q. What is the probability? \\
+%A. $\frac{N(t)}{N(0)}$? \\
+Q. What fraction of the original sample decays between t and t + dt? \\ \\
+A.  dN = -$\Gamma$Ndt, Equation (6.1) \\ \\
+Q. What is the initial probability, p(t)dt? \\ \\
+A. N(t) = N(0)$e^{-\Gamma t}$, Equation (6.2) \\ \\
+Using probability density function, (from wiki), \\ \\
+1 = C \(\int_0^\infty p(t) \,dt \) = C \(\int_0^\infty N(0)e^{-\Gamma t} \,dt \) , where C is normalizing coefficient.\\ \\
+= C \(\cdot \frac{N_{0}}{\Gamma} \) \\ \\ 
+C = \(\frac{\Gamma}{N_{0}}\) \\ \\
+Q. The average lifetime? \\ \\
+A. \(\tau = \langle t \rangle  = \int_0^\infty t p(t) \,dt  = \int_0^\infty t\frac{\Gamma}{N_{0}} N(0)e^{-\Gamma t} \,dt = \Gamma \int_0^\infty t e^{-\Gamma t} \,dt \)   \\\\
+\(\Gamma \int_0^\infty t e^{-\Gamma t} \,dt = (integration \ by \ parts) = \frac{1}{\Gamma}  =\tau \) \\ \\ 
+reference [wiki - Exponential decay, Probability Density function, integration by parts]
+
+
+
+\end{document}
