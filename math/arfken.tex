@@ -1,0 +1,34 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\title{Arfken} 
+\begin{document}
+Exercises 4.1.1 \\ \\ 
+Show that if all the components of any tensor of any rank vanish in one particular coordinate system, they vanish in all coordinate systems.\\
+Note. This point takes on special importance in the four-dimensional (4-D) curved space of general relativity. if a quantity, expressed as a tensor, exists in one coordinate system, it exists in all coordinate systems and is not just a consequence of a choice of a coordinate system(as are centrifugal and Coriolis forces in Newtonian mechanics.)\\\\
+Q. covariant four-vector?\\ \\
+Scalars : Invariant under rotations of the coordinate system, Single number \\\\ 
+Vectors : The number of real components = The dimension of the coordinate system. \\\\
+A tensor of rank n in d dimension , components : $d^{n}$ \\ \\ 
+\(\textbf{A} = A_{1}\mathbf{e_{1}} + A_{2}\mathbf{e_{2}} + A_{2}\mathbf{e_{2}} \) \\
+\(\textbf{A}' = A'_{1}\mathbf{e'_{1}} + A'_{2}\mathbf{e'_{2}} + A'_{2}\mathbf{e'_{2}} \)\\
+\(\mathbf{e_{i}} (i = 1, 2, 3)\) : Coordinate system, Before rotation \\
+\(\mathbf{e'_{i}} (i = 1, 2, 3)\) : Coordinate system, After rotation \\
+\textbf{A} = \textbf{A}' \\
+Expressing the relation : \\
+\( \textbf{A}'_{i} = \sum_{j}(\mathbf{e'_{i}} \cdot \mathbf{e_{j}}) \textbf{A}_{j} \) \\
+\( \textbf{A}'_{i} = \sum_{j}( \frac {\partial x'_{i}} {\partial x_{j}}) \textbf{A}_{j} \) \\ 
+\begin{figure}[h!]
+  \includegraphics[width=50mm]{pic11.jpg}
+  \label{fig:pic111}
+\end{figure}\\ \\
+This$(\textbf{A})$ is called a \textbf{contravariant} vector. \\ \\
+The gradient of a scalar $\phi$ \\ \\
+\( (\nabla \phi)'_{i} \equiv (\partial \phi / \partial x_{j}) \mathbf{e_{j}} \), \\ \\
+\( (\nabla \phi)'_{i} \equiv \sum_{j} \frac{\partial x_{j}}{\partial x'_{i}} \frac{\partial \phi}{\partial x_{j}} \)\\
+
+This$(\nabla \phi)$ is called a \textbf{covariant} vector. \\ \\
+
+
+
+\end{document}
