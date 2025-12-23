@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  20 DEC 2025 20:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  22 DEC 2025 14:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -148,17 +148,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
 
@@ -176,7 +181,7 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  1288 strings out of 473190
  21057 string characters out of 5715801
- 412854 words of memory out of 5000000
+ 414854 words of memory out of 5000000
  24589 multiletter control sequences out of 15000+600000
  558837 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -187,7 +192,7 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on chapter1.pdf (1 page, 66216 bytes).
+Output written on chapter1.pdf (1 page, 66955 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

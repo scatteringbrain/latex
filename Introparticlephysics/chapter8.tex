@@ -1,5 +1,7 @@
 \documentclass{report}
 \usepackage{graphicx}
+%\usepackage{tikz-feynman}
+\usepackage[compat=1.0.0]{tikz-feynman}
 \usepackage{amsmath}
 \title{chapter8} 
 \begin{document}
@@ -14,6 +16,13 @@ Problem 1. \\ \\
 external lines with momentum $p_1, p_2 ...$ , arrow direction forwards in time \\
 internal lines with momentum $q_1, q_2 ...$  , arrow direction forwards in time \\ \\
 
+2. External lines : 
+\begin{center}
+\textnormal{Electrons} 
+	\begin{cases}
+		%\textnormal{if bank issues ABs at time }\\ 
+	\end{cases}
+\end{center}
 3. Vertex factors (where lines meet) :  \\
 \[ ig_e\gamma^\mu \] \\ \\
 
@@ -37,9 +46,40 @@ And then integrate \\ \\
 
 7. Cancel the delta function : 
 {\center \((2\pi)^4\delta^4(p_1+p_2 +... - p_n)\)  \\ }
-This will simplify the integral $\rightarrow$ only one of q left by the conservation and return 1 by the delta function. \\  \\ 
+\vspace{5mm}
+This will simplify the integral $\rightarrow$ only one of q left by the conservation and return 1 by the delta function. \\  \\ \\ \\
+Solution \\ \\
+\begin{equation}
+\feynmandiagram [horizontal=a to b] {
+i1 [particle=\(e^{-}\)] -- [fermion, momentum'=\(p_1\)] a -- [fermion, rmomentum'=\(p_2\)] i2 [particle=\(e^{+}\)],
+a -- [photon, momentum'=\(q\)] b,
+f1 [particle=\(\mu^{-}\)] -- [anti fermion, rmomentum'=\(p_3\)] b -- [anti fermion, momentum'=\(p_4\)] f2 [particle=\(\mu^{+}\)],
+};
+\end{equation}
+A transition amplitude for the first order of perturbation quantum-mechanics, peskin eqn(1.2), \\ 
+In QM perturbation theory, to first order, the amplitude is, \\
+\begin{center}
+$\langle$ $\textnormal{final state}$ \(|\ H_1\ |\) $\textnormal{initial state}$ $\rangle$ 
+\end{center} 
+This is the first order, but the hamiltonian can not mediate the two state, but gamma does it.\\
+So, expand this equation to the next order with $\gamma$.\\ \\
 
-
-
+For ($e^-$ + $e^+$ $\rightarrow$ $\mu^-$ + $\mu^+$), \\
+\begin{center}
+M $\sim$ $\langle$$u^+$$u^-$ $| H_1 |$ $\gamma$ $\rangle$$^u$ $\langle$$\gamma$$| H_1 |$$e^+$$e^-$$\rangle$$_u$ \\ 
+\end{center}
+1. External electron lines : $|$$e^{+}e^{-}$$\rangle$\\
+2. External muon lines : $\langle$$e^{+}e^{-}$$|$\\
+3. The vertices : $H_1$ = \( ig_e\gamma^\mu \) always for QED. The object $\gamma^\mu$ are 4 x 4 matrices. \\
+4. Internal photon line : $|$$\gamma$$\rangle$$\langle$$\gamma$$|$ =  \(\frac{-ig_{\mu\nu}}{q^{2}}\)  \\
+\begin{center}
+ $\langle$$\textnormal{final state}$ | $H_1$ | $\textnormal{initial state}$$\rangle$\\ 
+\end{center}
+(small notes for myself : \\ 
+Q. why do we only use spinors ?\\ 
+A. chapter7.2 The solution for dirac equation \\
+Q. General solution of QM \\
+A. Get the E.S and E.V from assuming p = 0 $\rightarrow$
+Get the solutions for the general p with the states when p = 0) \\ 
 
 \end{document}
