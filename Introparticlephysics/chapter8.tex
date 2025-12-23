@@ -1,5 +1,6 @@
 \documentclass{report}
 \usepackage{graphicx}
+%\usepackage{tipk}
 %\usepackage{tikz-feynman}
 \usepackage[compat=1.0.0]{tikz-feynman}
 \usepackage{amsmath}
@@ -17,18 +18,47 @@ external lines with momentum $p_1, p_2 ...$ , arrow direction forwards in time \
 internal lines with momentum $q_1, q_2 ...$  , arrow direction forwards in time \\ \\
 
 2. External lines : 
-\begin{center}
-\textnormal{Electrons} 
-	\begin{cases}
-		%\textnormal{if bank issues ABs at time }\\ 
-	\end{cases}
-\end{center}
-3. Vertex factors (where lines meet) :  \\
-\[ ig_e\gamma^\mu \] \\ \\
+\begin{align*} \textnormal Electrons :
+    \left\{ 
+        \begin{aligned}
+            & Incoming : v \\
+            & Outgoing : \bar{v} \\
+        \end{aligned}
+    \right. \quad \\ %& \text{Base cases} \\
+    	\textnormal Quarks : 
+    \left\{ 
+        \begin{aligned}
+            & Incoming : \bar{\mu} \\
+            & Outgoing : \mu \\
+        \end{aligned}
+    \right. \quad \\ %& \text{Base cases} \\
+        	\textnormal Photons :
+    \left\{ 
+        \begin{aligned}
+            & Incoming : \epsilon_e \\
+            & Outgoing : \epsilon_{e^*} \\
+        \end{aligned}
+    \right. \quad \\ %& \text{Base cases} \\
+\end{align*}
 
-4. propagator : each internal lines' factors \\ 
-{\center $\textnormal{Electrons and positrons}$ : \(\frac{i(\gamma^{\mu}q_{\mu} + mc)}{q^{2}-m^{2}c^{2}}\) \\  }
-{\center $\textnormal{Photons}$ : \(\frac{-ig_{\mu\nu}}{q^{2}}\) \\  }
+%\begin{align*} 
+ %   \textnormal Electrons 
+  %  \left\{ 
+    %    \begin{aligned}
+      %      & Incoming : u \\
+        %    & Outgoing : \bar{u} \\
+       % \end{aligned}
+    %\right. \quad \\ %& \text{Base cases} \\
+%\end{align*}
+
+3. Vertex factors (where lines meet) :  \\
+ \[ \text{QED vertex, gamma :} \, \, \,  ig_e\gamma^u \] \\ \\
+
+4. Propagator : each internal lines' factors \\ 
+{\center $\textnormal{Electrons and positrons}$ : \(\frac{i(\gamma^{u}q_{u} + mc)}{q^{2}-m^{2}c^{2}}\) \\  }
+{\center $\textnormal{Quarks and antiquarks}$ : \(\frac{i(q' +mc)}{q^2-m^{2}c^{2}}\) \\
+($\textnormal{The problem said use only QED Feynman rules, so this was not used.}$) \\ }
+{\center $\textnormal{Photons}$ : \(\frac{-ig_{v\mu}}{q^{2}}\) \\  }
 %$\frac{i($\gamma^{\mu}$$q_{\mu}$ + mc)}{$q^{2}$-$m^{2}$$c^{2}$}$
 %\(\frac{$\gamma^u$$q_u$ + mc}{$q^2$-$m^2c^2$}\)
 %$\frac{i($\gamma$$^u$$q_u$ + mc}{$q^2$-$m^2$$c^2$}$
@@ -53,7 +83,7 @@ Solution \\ \\
 \feynmandiagram [horizontal=a to b] {
 i1 [particle=\(e^{-}\)] -- [fermion, momentum'=\(p_1\)] a -- [fermion, rmomentum'=\(p_2\)] i2 [particle=\(e^{+}\)],
 a -- [photon, momentum'=\(q\)] b,
-f1 [particle=\(\mu^{-}\)] -- [anti fermion, rmomentum'=\(p_3\)] b -- [anti fermion, momentum'=\(p_4\)] f2 [particle=\(\mu^{+}\)],
+f1 [particle=$q$] -- [anti fermion, rmomentum'=\(p_3\)] b -- [anti fermion, momentum'=\(p_4\)] f2 [particle=\(\bar{q}\)],
 };
 \end{equation}
 A transition amplitude for the first order of perturbation quantum-mechanics, peskin eqn(1.2), \\ 
@@ -64,22 +94,24 @@ $\langle$ $\textnormal{final state}$ \(|\ H_1\ |\) $\textnormal{initial state}$ 
 This is the first order, but the hamiltonian can not mediate the two state, but gamma does it.\\
 So, expand this equation to the next order with $\gamma$.\\ \\
 
-For ($e^-$ + $e^+$ $\rightarrow$ $\mu^-$ + $\mu^+$), \\
+For ($e^-$ + $e^+$ $\rightarrow$ $\bar{q}$ + $q$), \\
 \begin{center}
-M $\sim$ $\langle$$u^+$$u^-$ $| H_1 |$ $\gamma$ $\rangle$$^u$ $\langle$$\gamma$$| H_1 |$$e^+$$e^-$$\rangle$$_u$ \\ 
+M $\sim$ $\langle$$\bar{q}$ $q$ $| H_1 |$ $\gamma$ $\rangle$$^u$ $\langle$$\gamma$$| H_1 |$$e^+$$e^-$$\rangle$$_u$ \\ 
 \end{center}
 1. External electron lines : $|$$e^{+}e^{-}$$\rangle$\\
-2. External muon lines : $\langle$$e^{+}e^{-}$$|$\\
-3. The vertices : $H_1$ = \( ig_e\gamma^\mu \) always for QED. The object $\gamma^\mu$ are 4 x 4 matrices. \\
-4. Internal photon line : $|$$\gamma$$\rangle$$\langle$$\gamma$$|$ =  \(\frac{-ig_{\mu\nu}}{q^{2}}\)  \\
-\begin{center}
- $\langle$$\textnormal{final state}$ | $H_1$ | $\textnormal{initial state}$$\rangle$\\ 
-\end{center}
+2. External quark lines : $\langle$ $q\,\bar{q} \ $$|$\\
+3. The vertices : $H_1$ = \( ig_e\gamma^u \) always for QED. The object $\gamma^u$ are 4 x 4 matrices. \\
+4. Internal photon line : $|$$\gamma$$\rangle$$\langle$$\gamma$$|$ =  \(\frac{-ig_{v\mu}}{q^{2}}\)  \\\\\\
+\[ (2\pi)^4 \int [\bar{\mu}(3)(iQg_{e}\gamma^v)v(4)]\frac{-ig_{v\mu}}{q^2}[\bar{v}(2)(ig_{e}\gamma^u)\mu(1)]\times \delta^4(q-p_3 - p_4)\delta^4(p_1 + p_2 - q) \, dq^4 \]
+And, by the momentum conservation, \(q = - p_1 - p_2 = p_3 + p_4\) .\\
+\[ M = \frac{Qg_e^2}{(p_1 + p_2)^2}[\bar{v}(p_2)\gamma^u\mu(p_1)][\bar{u}(p_3)\gamma_u v(p_4)]\]
 (small notes for myself : \\ 
 Q. why do we only use spinors ?\\ 
 A. chapter7.2 The solution for dirac equation \\
 Q. General solution of QM \\
 A. Get the E.S and E.V from assuming p = 0 $\rightarrow$
-Get the solutions for the general p with the states when p = 0) \\ 
+Get the solutions for the general p with the states when p = 0, and here, when p = 0, the spinors are the eigenstates.) \\ 
+
+
 
 \end{document}
