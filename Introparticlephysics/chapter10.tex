@@ -6,6 +6,7 @@
 \usepackage{tikz}
 \usepackage{tkz-euclide}
 \usepackage{tikz-3dplot}
+\usepackage[makeroom]{cancel}
 \usetikzlibrary{shadings,intersections,patterns}
 
 \title{chapter10} 
@@ -52,7 +53,24 @@ One advantage of the Lagrangian formulation is that it does not commit us to any
 \draw pic[->,"$\phi$",draw=black,angle radius=15,angle eccentricity=1.2] {angle=y--o--mm};
 %\draw pic[-,"$\alpha$",draw=black,angle radius=10,angle eccentricity=1.2] {angle=p2--o--mmm};
 \draw pic[-,"$\alpha$",draw=black,angle radius=13,angle eccentricity=1.5] {angle=mmm--o--p2};
-\end{tikzpicture} 
+\end{tikzpicture}\\
+(a) Express T and U in terms of the variables z and $\phi$ and the constants $\alpha$ (the opening angle of the cone), m(the mass of. he particle), and g (the acceleration of gravity).\\
+(b) Construct the Lagrangian, and apply the Euler-Lagrangian equation to obtain differential equations for z(t) and $\phi$(t).\\
+(c) Show that L = \((m\tan^{2}\alpha)z^2\phi \) is a constant of the motion. What is this quantity, physically?\\
+(d) Use the result in (c) to eliminate $\phi$ from the z equation. ( You are left with a second-order differential equation for z(t); if you want to pursue the problem further, it is easiest to invoke conservation of energy, which yields a first-order equation for z.)\\
+
+Solution\\
+(a)\\
+Q. How can I get the equation of motion? \\  
+A. Need the velocity. \\
+v = r $\dot{\phi}$ + $\dot{r}$$\phi$ \\
+r = z $\tan$ $\alpha$, \\ 
+so,\\
+v = z $\tan$ $\alpha$ $\dot{\phi}$ + $\dot{z}$ $\tan$ $\alpha$ $\phi$ + \(\cancel{z \sec^2\alpha\dot{\alpha}}\)  \\
+so, \\
+\[T = \frac{1}{2}m (\tan\alpha)^2 (z^2 \dot{\phi}^2 + \dot{z}^2 \phi^2) \]
+\[V = m g z\] \\ \\
+(b) L = T - V \\ 
 
 
 
