@@ -1,0 +1,36 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage[compat=1.0.0]{tikz-feynman}
+\usepackage{amsmath}
+\usepackage{sansmath}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{tikz-3dplot}
+\usepackage[makeroom]{cancel}
+\usetikzlibrary{shadings,intersections,patterns}
+
+\title{chapter12} 
+\begin{document}
+Problem 1. \\ \\ 
+(a) Use Equation 10.132 to determine the mass of the W, in terms of \(v = \frac{\mu}{\lambda}\) and \( q = g_w \sqrt{\frac{\hbar c}{4 \pi}} \). Thus, confirm Equation (12.1) \\ 
+(b) Use Problem 10.21 and Equation 10.130 to determine the vertex factor for the coupling of the Higgs to a quark or lepton. \\ 
+(c) Use Equation 10.136 to determine the vertex factors for the couplings hWW, hZZ, and hhh.\\
+
+Solution\\
+(a) \(m_A = 2\sqrt{\pi}(\frac{q\mu}{\lambda c^2})\) (10.132)\\
+To get a mass term from a lagrangian, we expand L in powers of $\phi$ and pick out the term proportional to $\phi^2$. (second order in the field).\\ 
+\( L = \frac{1}{2} (\partial_\mu\phi)(\partial^\mu\phi) + \frac{1}{2}\mu^2\phi^2 - \frac{1}{4}\lambda^2\phi^4 \)\ \ \ (10.108)\\ 
+And we can assume that \( L = T - U (10.109)\)\\
+ and \(U(\phi) = -\frac{1}{2}\mu^2\phi^2 + \frac{1}{4}\lambda^2\phi^4 \) \ \ \ (10.110) \\
+\(\phi = \frac{\mu}{\lambda}\)\ \ \ (10.111) we assume this as a ground state. \\
+ Now, starts from (10.132), \(m_A = 2\sqrt{\pi}(\frac{q\mu}{\lambda c^2})\), \\
+This is the mass term for a free gauge field lagrangian(10.131) and was derived from the lagrangian of the spontaneously broken continuous symmetry(chapter 10.8). \\
+\(m_A = 2\sqrt{\pi}(\frac{g_w\sqrt{\hbar c/4\pi} v}{c^2})\)\\
+\(\frac{m_A c^2}{g_w} = 2\sqrt{\pi \hbar c / 4 \pi} = \frac{1}{2}\sqrt{\hbar c}v \rightarrow \sqrt{\hbar c}v =\frac{2 m_A c^2}{g_w} = 246  \ GeV\)\\
+the vertex factor is \( 2iM_m^2c^2g^{\mu\nu}/\hbar^2v \) : one higs + 2 Ws or 2 Zs.\\
+
+
+
+
+
+\end{document}

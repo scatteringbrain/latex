@@ -8,7 +8,8 @@
 \usepackage{tikz-3dplot}
 \usepackage[makeroom]{cancel}
 \usetikzlibrary{shadings,intersections,patterns}
-
+\usepackage{setspace}
+\doublespacing
 \title{chapter11} 
 \begin{document}
 
@@ -16,6 +17,8 @@ Problem 1. \\ \\
 Estimate the lifetime of the sun, assuming (as Lord Kelvin did) that the source of the energy radiated is gravity. Look up any empirical numbers (the power radiated by the sun, the mass, and radius of the sun).\\\\
 Solution\\
 From wiki - kelvin-Helmholtz mechanism,\\
-$U$ = - $\frac{Gm_1m_2}{r}$,\\
-\(U = -G \int \)\\
+\(U = -\frac{Gm_1m_2}{r}\),\\
+\(U = -G \int_{0}^{R}\frac{m(r)4\pi r^2 \rho}{r}dr = -G \int_{0}^{R}\frac{4\pi r^3 4\pi r^2 \rho}{r}dr = - \frac{16}{15}G\pi^2\rho^2R^5 = - \frac{3GM^2}{5R} \)\\
+Using the Virial theorem, \(U_r = \frac{|\langle U \rangle |}{2} = \frac{3GM^2}{10R} \) \\
+And divide the potential energy by the luminosity of the Sun, \(\frac{U_r}{L_\odot} \approx \frac{1.1 \times 10^{41} J} {3.828 \times 10^26 W} = 2.874 \times 10^{14} s \approx 89000000 \ \ \textnormal{years}\).
 \end{document}
