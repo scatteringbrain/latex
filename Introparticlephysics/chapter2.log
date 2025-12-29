@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 DEC 2025 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 DEC 2025 13:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,6 +655,31 @@ Package tikz-feynman Warning: The key you tried to use '/tikz/graphs/same layer
 ' requires LuaTeX. It will be ignored. on input line 64.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 50--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
+
+ []
+
+
 
 [2] (./chapter2.aux)
  ***********
@@ -665,7 +690,7 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  14865 strings out of 473190
  338175 string characters out of 5715801
- 754960 words of memory out of 5000000
+ 756960 words of memory out of 5000000
  37881 multiletter control sequences out of 15000+600000
  558837 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -676,7 +701,7 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on chapter2.pdf (2 pages, 70441 bytes).
+Output written on chapter2.pdf (2 pages, 72407 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
