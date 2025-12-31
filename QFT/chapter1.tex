@@ -1,5 +1,8 @@
 \documentclass{report}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikz-feynman}
+
 \title{chapter1} 
 \begin{document}
 
@@ -18,7 +21,7 @@ Cross section calculation \\
 \[\frac{d\sigma}{d\Omega} = \frac{1}{64\pi^{2}E^{2}_{cm}\cdot |M|^2}\]
 {\center( $\textnormal{CM scattering}$ ) \\}
 
-For the QED, The 'M' is not known.\\ 
+For the QED, The `M' is not known.\\ 
 
 The best we can do : Set M as a perturbation series of QED, and evaluate the first term. \\
 
@@ -27,18 +30,42 @@ The Feynman diagram $\rightarrow$ visualize the perturbation.\\
 In QM perturbation theory, to first order, the amplitude is, \\
 \begin{center}
 $\langle$ $\textnormal{final state}$ \(|\ H_1\ |\) $\textnormal{initial state}$ $\rangle$ 
+
+\feynmandiagram [vertical'=a to b] {
+i1 [particle=\(\mu^{+}\)]
+-- [fermion] a
+-- [fermion] f1 [particle=\(\mu^{-}\)],
+a -- [photon, edge label=\(\gamma\)] b,
+i2 [particle=\(e^{-}\)]
+-- [fermion] b
+-- [fermion] f2 [particle=\(e^{+}\)],
+}; \\
 \end{center} 
 This is the first order, but the hamiltonian can not mediate the two state, but gamma does it.\\
 So, expand this equation to the next order with $\gamma$.\\ \\
 
 For ($e^-$ + $e^+$ $\rightarrow$ $\mu^-$ + $\mu^+$), \\
 \begin{center}
-M $\sim$ $\langle$$u^+$$u^-$ $| H_1 |$ $\gamma$ $\rangle$$^u$ $\langle$$\gamma$$| H_1 |$$e^+$$e^-$$\rangle$$_u$ \\ 
+M $\sim$ $\langle$$\mu^+$$\mu^-$ $| H_1 |$ $\gamma$ $\rangle$$^\mu$ $\langle$$\gamma$$| H_1 |$$e^+$$e^-$$\rangle$$_\mu$ \\ 
 \end{center}
+
 1. External electron lines : $|$$e^{+}e^{-}$$\rangle$\\
-2. External muon lines : $\langle$$e^{+}e^{-}$$|$\\
+2. External muon lines : $\langle$$\mu^{+}\mu^{-}$$|$\\
 3. The vertices : $H_1$ \\
 4. Internal photon line : $|$$\gamma$$\rangle$$\langle$$\gamma$$|$\\
-5. 
-
+5. The amplitude $M$ will be a Lorentz-invariant scalar as long as each states are 4-vectors.\\ \\
+$\langle$$\gamma$$| H_1 |$$e^+$$e^-$$ \rangle$$_\mu$ $\rightarrow$ $H_1$ is related to $\gamma$ and electrons $\rightarrow$ the elements of the matrix is proportional to $e$.\\ 
+Spin Orientations : \\
+1. The electron and Muon $\rightarrow$ parallel spins. \\ 
+2. The electron and Muon : "right handed", The positron and positive Muon : "left handed". \\ 
+3. The electron and positron spins add up to one angular momentum in the +z direction. \\
+The $H_1$ should conserve the angular momentum.\\
+$\rightarrow$ photon's polarization vector : $\epsilon^\mu$ = (0,1,i,0)\\
+\begin{figure}[!ht]
+  \includegraphics[scale=0.25]{grifitth7_94.png}
+\includegraphics[scale=0.25]{grifitth_7_159.png}  \caption{Grifitth chapter7}
+  \label{fig:myfig1}
+\end{figure}
+%\includegraphics[scale=0.25]{grifitth7_94.png}
+%\includegraphics[scale=0.25]{grifitth_7_159.png}
 \end{document}
