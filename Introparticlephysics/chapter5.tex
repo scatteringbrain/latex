@@ -1,5 +1,6 @@
 \documentclass{report}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \title{chapter5} 
 \begin{document}
 Problem 1. \\ \\ 
@@ -20,6 +21,29 @@ A. mass difference $\times$ $c^{2}$ = binding energy = 2.2 MeV (in wikipedia, it
 \end{figure}
 Figure \ref{fig:Table4.4} Quark masses.
 
-\[M(meson) = m_{1} + m_{2} + A \frac{(S_{1} \cdot S_{2})}{m_{1}m_{2}}\]\\
-(will continue)
+\[M(meson) = m_{1} + m_{2} + A \frac{(S_{1} \cdot S_{2})}{m_{1}m_{2}} \ \ (5.48) \]\\
+This is because of the fact that the pseudoscalr and vector mesons have different masses even though they have the same quark contents while  their spin orientations are different. \\ 
+\begin{equation}
+\textbf{$S_{1}$} \cdot \textbf{$S_{2}$} = \frac{1}{2}(S^{2} -S_1^{2} - S_2^{2}) =\left\{
+\begin{array}{@{}rl@{}}
+ \frac{1}{4} \hbar^2, \textnormal{for} \ s = 1(\textnormal{vector mesons}) \\
+- \frac{3}{4} \hbar^2, \textnormal{for} \ s = 0(\textnormal{pseudoscalars})
+\end{array}
+\right .
+\end{equation}    \\
+% ref : https://tex.stackexchange.com/questions/283013/how-to-get-big-curly-braces-for-an-equation-with-3-parts
+$m_{u}$ = $m_{d}$ = 308 MeV/$c^{2}$, $m_{s}$ = 483 MeV/$c^{2}$,  A = 159 MeV/$c^{2}$ \\
+
+\begin{equation}
+\left\{
+\begin{array}{@{}ll@{}}
+|1 \ 1\rangle = -u \bar{d} \\
+|1 \ 0 \rangle = (u \bar{u} - d \bar{d} )/ \sqrt{2} \\
+|1 \ -1\rangle = d \bar{u} \\
+\end{array}
+\right .
+\end{equation} 
+% ref : https://tex.stackexchange.com/questions/61481/left-aligning-the-conditional-statement-inside-an-array
+
+
 \end{document}
