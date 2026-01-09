@@ -1,5 +1,6 @@
 \documentclass{report}
 \usepackage{graphicx}
+\usepackage[makeroom]{cancel}
 %\usepackage{tipk}
 %\usepackage{tikz-feynman}
 \usepackage[compat=1.0.0]{tikz-feynman}
@@ -105,12 +106,32 @@ M $\sim$ $\langle$$\bar{q}$ $q$ $| H_1 |$ $\gamma$ $\rangle$$^u$ $\langle$$\gamm
 \[ (2\pi)^4 \int [\bar{\mu}(3)(iQg_{e}\gamma^v)v(4)]\frac{-ig_{v\mu}}{q^2}[\bar{v}(2)(ig_{e}\gamma^u)\mu(1)]\times \delta^4(q-p_3 - p_4)\delta^4(p_1 + p_2 - q) \, dq^4 \]
 And, by the momentum conservation, \(q = - p_1 - p_2 = p_3 + p_4\) .\\
 \[ M = \frac{Qg_e^2}{(p_1 + p_2)^2}[\bar{v}(p_2)\gamma^u\mu(p_1)][\bar{u}(p_3)\gamma_u v(p_4)]\]
+This is the equation (8.1)\\
 (small notes for myself : \\ 
 Q. why do we only use spinors ?\\ 
 A. chapter7.2 The solution for dirac equation \\
 Q. General solution of QM \\
 A. Get the E.S and E.V from assuming p = 0 $\rightarrow$
-Get the solutions for the general p with the states when p = 0, and here, when p = 0, the spinors are the eigenstates.) \\ 
+Get the solutions for the general p with the states when p = 0, and here, when p = 0, the spinors are the eigenstates.) \\ \\ \\
+
+(b) Obtain Equation (8.2) from (8.1)\\ \\ 
+ (8.2)\\
+ \[  \langle |M|^2\rangle = \frac{1}{4} \bigg[ \frac{Qg_e^2}{(p_1 + p_2)^2} \bigg]^2 Tr [\gamma^\mu (\cancel{p_1} + mc)\gamma^\nu(\cancel{p_2} - mc)] \times Tr[\gamma_\mu(\cancel{p_4} - Mc)\gamma_\nu(\cancel{p_3} + Mc)] \]
+(8.1)\\
+\[ M = \frac{Qg_e^2}{(p_1 + p_2)^2}[\bar{v}(p_2)\gamma^u\mu(p_1)][\bar{u}(p_3)\gamma_u v(p_4)]\] \\
+Where the slash notation means, \(\cancel{a} \equiv  a^\mu \gamma_\mu \). \\\\ 
+
+(Following of chapter 7.7) \\
+\(\langle |M|^2 \rangle \equiv \textnormal{average over initial spins, sum over final spins of } |M(s_i \rightarrow s_f)|^2 \).\\ 
+For electron-muon scattering amplitude, \\
+\[ |M|^2 = \frac{g_e^4}{(p_1 - p_3)^4}[\bar{u}(3)\gamma^{\mu}u(1)][\bar{u}(4)\gamma_{\mu}u(2)][\bar{u}(3)\gamma^{\nu}u(1)]^*[\bar{u}(4)\gamma_{\nu}u(2)]^*\] \\  
+\[G\equiv [\bar{u}(a)\Gamma_1 u(b)][\bar{u}(a)\Gamma_2 u(b)]^*\] \\ 
+We can evaluate the complex conjugate because the quantity in the square brackets is a 1 $\times$ 1 matrix. \\
+\[[\bar{u}(a)\Gamma_2 u(b)]^* = [u(a)^\dagger\gamma^0\Gamma_2 u(b)]^\dagger = u(b)^\dagger \Gamma_2^\dagger \gamma^{0\dagger} u(a) \]\\
+Now, \(\gamma^{0\dagger} = \gamma^0\), and \((\gamma^0)^2 = 1\), so \\
+\[u(b)^\dagger\Gamma_2^\dagger \gamma^{0\dagger} u(a) = u(b)^\dagger \gamma^0 \gamma^0 \Gamma_2^\dagger \gamma^0 u(a) = \bar{u}(a)\bar{\Gamma}_2 u(a)\] \\
+Where \[ \bar{\Gamma}_2 \equiv \gamma^0\Gamma_2^\dagger \gamma^0 \] \\ 
+Thus \[G = [\bar{u}(a)\Gamma_1 u(b)][\bar{u}(b)\bar{\Gamma}_2u(a)]\] \\
 
 
 
