@@ -71,8 +71,65 @@ so, \\
 \[T = \frac{1}{2}m (\tan\alpha)^2 (z^2 \dot{\phi}^2 + \dot{z}^2 \phi^2) \]
 \[V = m g z\] \\ \\
 (b) L = T - V \\ 
+And Euler-Lagrangian equation is, \[ \frac{\partial L}{\partial q} - \frac{d}{dt} (\frac{\partial L}{\partial{\dot{q}}}) = 0 \]. \\ 
+\((\frac{m\tan^2\alpha }{2}) ( \frac{\partial (z^2 \dot{\phi}^2 + \dot{z}^2 \phi^2)}{\partial z } + \frac{\partial (z^2 \dot{\phi}^2 + \dot{z}^2 \phi^2)}{\partial \phi } - \frac{d}{dt}(\frac{\partial (z^2 \dot{\phi}^2 + \dot{z}^2 \phi^2)}{\partial \dot{z}})- \frac{d}{dt}(\frac{\partial (z^2 \dot{\phi}^2 + \dot{z}^2 \phi^2)}{\partial \dot{\phi}})) - \frac{\partial(mgz)}{\partial{z}} + \frac{d}{dt}(\frac{\partial (mgz)}{\partial \dot{z}})= 0  \) \\
+for z, \((\frac{m\tan^2\alpha }{2}) ( 2z\dot{\phi}^2 - 2\ddot{z}\phi^2 - 2\dot{z}2\phi\dot{\phi}) - mg = 0 \) \\
+for $\phi$, \((\frac{m\tan^2\alpha }{2}) (2\phi\dot{z}^2 - 2\ddot{\phi}z^2 - 2z\dot{z}2\dot{\phi} ) = 0 \) \\
 
+Problem 2. \\
+Derive Equation 10.17 \\\\
+Solution \\
+Equation 10.17 \[ \frac{\partial L}{\partial A_\nu} = \frac{1}{4\pi} (\frac{mc}{\hbar})^2 A^\nu \]
+The Proca Lagrangian for a Vector (Spin-1) Field ($A^\mu$). 
+\[ L = \frac{-1}{16\pi} (\partial^{\mu}A^{\nu} - \partial^{\nu} A^{\mu}) (\partial_{\mu}A_{\nu} - \partial_{\nu} A_{\mu}) + \frac{1}{8\pi}(\frac{mc}{\hbar})^2 A^\nu A_\mu \ \ \ \ \ (10.16)\]\\
 
+Note for myself\\\\
+From (7.71)\\
+\[F^{\mu\nu} = \begin{bmatrix}
+0 & -E_x & -E_y & -E_z \\
+E_x & 0 & -B_z & B_y \\
+E_y & B_z & 0 & -B_x \\
+E_z & -B_y & B_x & 0 
+\end{bmatrix} \] \\ \\ \\ \\
+From wiki - electromagnetic tensor \\ 
+F = dA. where F is the electromagnetic tensor, defined as exterior derivative of the electromagnetic four-potential, A, a differential 1-form.\\
+F is an antisymmetric rank-2 tensor field.\\
+\(F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu.\) \\ 
+where $\partial$ is the four--gradient and A is the four-potential. \\
+This is the contravariant matrix form.\\
+\(F^{\mu\nu} = \begin{bmatrix}
+0 & -E_x & -E_y & -E_z \\
+E_x & 0 & -B_z & B_y \\
+E_y & B_z & 0 & -B_x \\
+E_z & -B_y & B_x & 0 
+\end{bmatrix} \) \\
+This is the covariant matrix form. \\
+\(F_{\mu\nu} = \eta_{\alpha \nu} F^{\beta \alpha} \eta_{\mu\beta} = \begin{bmatrix}
+0 & E_x & E_y & E_z \\
+-E_x & 0 & -B_z & B_y \\
+-E_y & B_z & 0 & -B_x \\
+-E_z & -B_y & B_x & 0 
+\end{bmatrix} \) \\
 
-
+Q. The matrix notation for the contravariant or covariant tenstors? \\\\\
+A. convention :\\
+A contravariant vector : \[ v^\alpha = \begin{bmatrix}
+v^0 \\
+v^1 \\
+v^2 
+\end{bmatrix} \] 
+A covariant vector : \[ u_\alpha = \begin{bmatrix}
+v_0, v_1, v_2  \end{bmatrix} \]
+\(\textnormal{ref: https://bjlkeng.io/posts/tensors-tensors-tensors/} \) \\  
+$\mathbf{u} \cdot \mathbf{v}$ = $\sum_{i=1}^{n} u_i v_i$\\
+$\mathbf{u} \cdot \mathbf{v}$ = $g(\mathbf{u},\mathbf{v})$= $g_{ij}u^i v^j$ = \( [ u^0, u^1 ] \begin{bmatrix}
+ 1 & 0\\
+ 0 & 1 
+ \end{bmatrix} \begin{bmatrix} 
+ v^0 \\
+ v^1
+ \end{bmatrix} \) \\
+Q. Why $F^{\mu\nu}$ is a square matrix? if $F^{i}$ means a column matrix? \\
+A. $F^{ii}$ = $F^{1 1}$ $g_{1 1}$ + $F^{1 2}$ $g_{1 2}$? contraction is needed? not sure. \\
+\textnormal{ref: https://dasublogbyprashanth.blogspot.com/2023/11/contravariant-and-covariant-objects-in.html?m=1} \\ 
 \end{document}
