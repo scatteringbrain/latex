@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 DEC 2025 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 JAN 2026 12:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,8 +680,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--76
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
 
-[2] (./chapter2.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+
+ []
+
+
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+
+Overfull \hbox (37.47754pt too wide) in paragraph at lines 83--86
+\OT1/cmr/m/n/10 check the ex-per-i-men-tal data. (One of the suc-cess-ful pre-d
+ic-tions of the Cabibbo/GIM/KM
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+
+ []
+
+
+
+[3] (./chapter2.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -701,10 +749,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on chapter2.pdf (2 pages, 72407 bytes).
+Output written on chapter2.pdf (3 pages, 78062 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
